@@ -2282,6 +2282,9 @@
 		1939E92C1A137BCC00E602FC /* fileStore */ = {
 			isa = PBXGroup;
 			children = (
+				19D168BC1A147A1300FD3558 /* images */,
+				19D168BD1A147A1300FD3558 /* Model */,
+				19D168BE1A147A1300FD3558 /* View */,
 				1939E92D1A137C2600E602FC /* FileMainNavViewController.h */,
 				1939E92E1A137C2600E602FC /* FileMainNavViewController.m */,
 			);
@@ -3937,6 +3940,27 @@
 				19CB1D091A0A317C002ABD98 /* BMKVersion.h */,
 			);
 			path = inc;
+			sourceTree = "<group>";
+		};
+		19D168BC1A147A1300FD3558 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		19D168BD1A147A1300FD3558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19D168BE1A147A1300FD3558 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3951C90919D11CC10040B07E /* FMDB */ = {

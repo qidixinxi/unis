@@ -26,4 +26,5 @@
 +(BOOL)judgeFileSuffixImage:(NSString *)string;
 // 弹出提示图层
 + (void)presentAlert:(NSString *)alertContent;
++ (void)setExtraCellLineHidden: (UITableView *)tableView;
 @end

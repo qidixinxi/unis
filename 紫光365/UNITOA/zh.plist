@@ -374,5 +374,11 @@
 	<string>关于紫光oa</string>
 	<key>version_num</key>
 	<string>紫光OA 1.0</string>
+	<key>company_filestore</key>
+	<string>公司文件柜</string>
+	<key>private_filestore</key>
+	<string>私人文件柜</string>
+	<key>locao_filestore</key>
+	<string>本地手机文件柜</string>
 </dict>
 </plist>

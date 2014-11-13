@@ -118,4 +118,13 @@
     
     [alert addSubview:activeView];
 }
+#pragma mark -------- setExtraCellLineHidden -----------
++ (void)setExtraCellLineHidden: (UITableView *)tableView
+{
+    UIView *view =[ [UIView alloc]init];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+    [tableView setTableHeaderView:view];
+    view = nil;
+}
 @end
