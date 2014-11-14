@@ -14,5 +14,4 @@
 
 
 -(void)setATitle:(NSString *)aTitle;
-
 @end

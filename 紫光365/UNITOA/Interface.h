@@ -37,6 +37,7 @@
 #define NEW_ARTICLE_LIST       @"newarticlelist.php"            // 14、公开信及群组最新信息列表
 #define USER_CONTACT_SAVE      @"usercontactsave.php"           // 20、保存用户联系人
 #define DELETE_BLOG_URL        @"userarticledel.php"            // 45、删除朋友圈文章
+#define USER_LIST_URL          @"userlist.php"                  // 17、审核通过用户列表
 
 #pragma mark --------签到和当面签到接口--------------------------------------
 #define SIGN_IN_URL            @"signin.php"                    // 77、签到

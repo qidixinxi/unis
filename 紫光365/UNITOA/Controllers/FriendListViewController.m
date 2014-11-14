@@ -9,7 +9,6 @@
 #import "FriendListViewController.h"
 #import "pinyin.h"
 #import "ChineseString.h"
-#import "Interface.h"
 #import "FriendIfo.h"
 #import "FriendsTableViewCell.h"
 #import "FriendsTableViewCellOne.h"

@@ -7,7 +7,7 @@
 //
 
 #import "FileMainNavViewController.h"
-
+#import "companyMemberlistViewController.h"
 @interface FileMainNavViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView  *_tableView;
@@ -26,6 +26,7 @@
     }
     self.aTitle = LOCALIZATION(@"filestore");
     self.NAVArray = @[LOCALIZATION(@"company_filestore"),LOCALIZATION(@"private_filestore"),LOCALIZATION(@"locao_filestore")];
+    [self creaTable];
 }
 - (void)creaTable{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
@@ -42,7 +43,7 @@
     return [self.NAVArray count];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 30;
+    return 60;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellName = @"Fcell";
@@ -51,10 +52,24 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellName];
     }
     cell.textLabel.text = self.NAVArray[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
-}- (void)didReceiveMemoryWarning {
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        companyMemberlistViewController *companyVC = [[companyMemberlistViewController alloc]init];
+        [self.navigationController pushViewController:companyVC animated:YES];
+    }
+    else if (indexPath.row == 1){
+        
+    }
+    else if (indexPath .row == 2){
+        
+    }
+}
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
